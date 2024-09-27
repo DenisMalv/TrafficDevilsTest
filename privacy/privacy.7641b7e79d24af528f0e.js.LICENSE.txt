@@ -1,0 +1,123 @@
+/*! !!../../node_modules/css-loader/dist/cjs.js!../../node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!../../node_modules/group-css-media-queries-loader/lib/index.js!../../node_modules/resolve-url-loader/index.js!../../node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[5]!./privacy.scss */
+
+/*! !../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */
+
+/*! !../../node_modules/style-loader/dist/runtime/insertBySelector.js */
+
+/*! !../../node_modules/style-loader/dist/runtime/insertStyleElement.js */
+
+/*! !../../node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js */
+
+/*! !../../node_modules/style-loader/dist/runtime/styleDomAPI.js */
+
+/*! !../../node_modules/style-loader/dist/runtime/styleTagTransform.js */
+
+/*! -!../../node_modules/css-loader/dist/cjs.js!../../node_modules/normalize.css/normalize.css */
+
+/*! ../../node_modules/css-loader/dist/runtime/api.js */
+
+/*! ../../node_modules/css-loader/dist/runtime/getUrl.js */
+
+/*! ../../node_modules/css-loader/dist/runtime/sourceMaps.js */
+
+/*! ../css-loader/dist/runtime/api.js */
+
+/*! ../css-loader/dist/runtime/sourceMaps.js */
+
+/*! ../fonts/Prompt-Bold.ttf */
+
+/*! ../fonts/Prompt-ExtraBold.ttf */
+
+/*! ../fonts/Prompt-Medium.ttf */
+
+/*! ../fonts/Prompt-Regular.ttf */
+
+/*! ../fonts/Prompt-SemiBold.ttf */
+
+/*! ../modules/common/header */
+
+/*! ../modules/common/refsCommon */
+
+/*! ./privacy.scss */
+
+/*! ./refsCommon */
+
+/*!******************************!*\
+  !*** ./src/pages/privacy.js ***!
+  \******************************/
+
+/*!********************************!*\
+  !*** ./src/pages/privacy.scss ***!
+  \********************************/
+
+/*!***********************************!*\
+  !*** ./src/fonts/Prompt-Bold.ttf ***!
+  \***********************************/
+
+/*!*************************************!*\
+  !*** ./src/fonts/Prompt-Medium.ttf ***!
+  \*************************************/
+
+/*!**************************************!*\
+  !*** ./src/fonts/Prompt-Regular.ttf ***!
+  \**************************************/
+
+/*!**************************************!*\
+  !*** ./src/modules/common/header.js ***!
+  \**************************************/
+
+/*!***************************************!*\
+  !*** ./src/fonts/Prompt-SemiBold.ttf ***!
+  \***************************************/
+
+/*!****************************************!*\
+  !*** ./src/fonts/Prompt-ExtraBold.ttf ***!
+  \****************************************/
+
+/*!******************************************!*\
+  !*** ./src/modules/common/refsCommon.js ***!
+  \******************************************/
+
+/*!*****************************************************!*\
+  !*** ./node_modules/css-loader/dist/runtime/api.js ***!
+  \*****************************************************/
+
+/*!********************************************************!*\
+  !*** ./node_modules/css-loader/dist/runtime/getUrl.js ***!
+  \********************************************************/
+
+/*!************************************************************!*\
+  !*** ./node_modules/css-loader/dist/runtime/sourceMaps.js ***!
+  \************************************************************/
+
+/*!***************************************************************!*\
+  !*** ./node_modules/style-loader/dist/runtime/styleDomAPI.js ***!
+  \***************************************************************/
+
+/*!********************************************************************!*\
+  !*** ./node_modules/style-loader/dist/runtime/insertBySelector.js ***!
+  \********************************************************************/
+
+/*!*********************************************************************!*\
+  !*** ./node_modules/style-loader/dist/runtime/styleTagTransform.js ***!
+  \*********************************************************************/
+
+/*!**********************************************************************!*\
+  !*** ./node_modules/style-loader/dist/runtime/insertStyleElement.js ***!
+  \**********************************************************************/
+
+/*!****************************************************************************!*\
+  !*** ./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js ***!
+  \****************************************************************************/
+
+/*!**********************************************************************************!*\
+  !*** ./node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js ***!
+  \**********************************************************************************/
+
+/*!****************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/normalize.css/normalize.css ***!
+  \****************************************************************************************/
+
+/*!*********************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/group-css-media-queries-loader/lib/index.js!./node_modules/resolve-url-loader/index.js!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[5]!./src/pages/privacy.scss ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************************************************************/
