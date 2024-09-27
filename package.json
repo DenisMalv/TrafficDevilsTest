@@ -1,7 +1,7 @@
 {
-  "name": "TraficDevilsTest",
+  "name": "TrafficDevilsTest",
   "version": "1.2.2",
-  "homepage": "https://denismalv.github.io/TraficDevilsTest/",
+  "homepage": "https://denismalv.github.io/TrafficDevilsTest/",
   "description": "",
   "main": "index.js",
   "scripts": {
