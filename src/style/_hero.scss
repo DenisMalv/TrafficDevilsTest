@@ -1,0 +1,48 @@
+.hero{
+    padding-top: 15px;
+    padding-bottom: 80px;
+
+    & .sup-title{
+        font-size: 14px;
+        line-height: 1.5;
+        font-weight: 400;
+        margin-bottom: 75px;
+    }
+
+    .title{
+        font-size: 50px;
+        line-height: 1.1;
+        font-weight: 800;
+        margin-bottom: 15px;
+    }
+
+    .descr{
+        margin-bottom: 30px;
+        max-width: 488px;
+    }
+
+
+}
+
+.hero-text-container{
+    position: relative;
+    width: 569px;
+    padding-bottom: 44px;
+    &::after{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        right: -610px;
+
+        width: 589px;
+        height: 427px;
+
+
+        @include desktop {
+            background-image: url('../img/hero/hero.webp');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 589px auto;
+        }   
+    }
+}

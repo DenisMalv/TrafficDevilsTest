@@ -1,0 +1,66 @@
+.how-we-work{
+    background-color: $black;
+    color: $white;
+
+    &-list__item{
+        color: $black;
+        padding: 20px;
+        background-color: $white;
+        border-radius: 20px;
+
+        width: 285px;
+        
+        .sup-title{
+            padding: 9px 30px 10px 30px;
+            margin-bottom: 15px;
+            background-color: #5646CC33;
+            border-radius: 50px;
+            max-width: max-content;
+        
+        
+            color: $accent;
+            font-size: 14px;
+            line-height: 1.5;
+            font-weight: 600;
+        }
+        .title{
+            font-size: 22px;
+            line-height: 1.1;
+            margin-bottom: 10px;
+        }
+        .descr{
+            font-size: 15px;
+        }
+    }
+
+    &-list__sub-item{
+        width: 245px;
+        position: relative;
+
+        &::before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: calc(100% - 4px);
+            height: 30px;
+            border-left: 2px solid $accent;
+            border-right: 2px solid $accent;
+            border-bottom: 2px solid $accent;
+  
+        }
+
+        .sup-title{
+            margin: 42px auto;;
+            padding: 9px 30px 10px 30px;
+            background-color: $accent;
+            border-radius: 50px;
+            max-width: max-content;
+        
+            color: $white;
+            font-size: 14px;
+            line-height: 1.5;
+            font-weight: 600;
+        }
+    }
+}

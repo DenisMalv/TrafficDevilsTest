@@ -1,0 +1,46 @@
+.innovations-list{
+
+    &__item{
+        width: 387px;
+    }
+}
+
+.innovation-text-container{
+    display: flex;
+    flex-direction: column;
+    height: 223px;
+}
+
+.innovation-img{
+    display: block;
+    line-height: 0;
+    font-size: 0;
+    margin-bottom: 15px;
+}
+
+.innovation-sup-title{
+    // #5646CC33
+    padding: 9px 30px 10px 30px;
+    margin-bottom: 20px;
+    background-color: #5646CC33;
+    border-radius: 50px;
+    max-width: max-content;
+
+
+    color: $accent;
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: 600;
+
+}
+
+.innovation-title{
+    font-size: 22px;
+    line-height: 1.1;
+    margin-bottom: 15px;
+}
+
+.innovation-descr{
+    font-size: 15px;
+    margin-bottom: auto;
+}
