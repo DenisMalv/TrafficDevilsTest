@@ -1,7 +1,7 @@
 {
-  "name": "MG-Group",
+  "name": "TraficDevilsTest",
   "version": "1.2.2",
-  "homepage": "https://denismalv.github.io/mg-group-dev/",
+  "homepage": "https://denismalv.github.io/TraficDevilsTest/",
   "description": "",
   "main": "index.js",
   "scripts": {
