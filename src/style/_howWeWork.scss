@@ -33,7 +33,11 @@
         }
     }
 
-    &-list__sub-item{
+    &__sub-list{
+        gap: clamp(6px, -13.367rem + 21.67vw, 60px);
+    }
+
+    &__sub-list-item{
         width: 245px;
         position: relative;
 
