@@ -9,7 +9,8 @@
     "build": "webpack",
     "build-prod": "webpack --node-env=production",
     "clear": "rd /s /q dist",
-    "deploy": "npm run build && gh-pages -d dist"
+    "deploy": "npm run build && gh-pages -d dist",
+    "deploy-prod": "npm run build-prod && gh-pages -d dist"
   },
   "keywords": [],
   "author": "",
