@@ -15,6 +15,7 @@ import '../modules/common/reviewsSwiper'
 import '../modules/common/accordion'
 
 // modules
+import '../modules/common/form'
 
 // animate
 import '../modules/common/aos'

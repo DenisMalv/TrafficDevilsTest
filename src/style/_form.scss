@@ -17,25 +17,43 @@
         width: 100%;
         max-width: 590px;
 
+        &-label{
+            position: relative;
+        }
+
         &-input{
             width: 100%;
-            padding: 19px;
+            padding: 18px;
             background-color: $white;
-            border:1px solid $white;
+            border:2px solid $white;
             border-radius: 12px;
 
             font-size: 15px;
             line-height: 1.3;
             color: $black;
 
-            transition: $transition;
+            transition: $transition-btn;
 
             &::placeholder{
                 content: #1E1E1E99;
             }
         }
-        .error.form-input{
-            border:1px solid $error
+
+        // .error-message{
+        //     position: absolute;
+        //     left: 20px;
+        //     bottom: -3px;
+        //     color: #ff1e0e;
+        //     opacity: 0;
+        //     transition: $transition-btn;
+            
+        //     &.checkbox{
+        //         left: 0px;
+        //         bottom: -16px;
+        //     }
+        // }
+        .just-validate-error-field.form-input{
+            border:2px solid $error
         }
 
         &-label-checkbox{
@@ -44,10 +62,11 @@
 
         &-checkbox{
             position: relative;
-            width: 19px;
-            height: 19px;
+            width: 18px;
+            height: 18px;
             background-color: transparent;
-            border:1px solid transparent;
+            border:2px solid transparent;
+            border-radius: 12px;
 
 
             &::before{
@@ -55,11 +74,11 @@
                 position: absolute;
                 top: 0;
                 left: 0;
-                width: 19px;
-                height: 19px;
+                width: 18px;
+                height: 18px;
                 background-color: $white;
                 border-radius: 3px;
-                border:1px solid $accent;
+                border:2px solid $accent;
                 transition: $transition;
             }
 
@@ -72,7 +91,7 @@
                 height: 20px;
                 opacity: 0;
 
-                transition: $transition;
+                transition: $transition-btn;
                 background-image: url('../img/icons/check.svg');
                 background-position: center;
                 background-repeat: no-repeat;
@@ -84,8 +103,8 @@
               }
 
         }
-        .error.form-checkbox::before{
-            border: 1px solid $error;
+        .just-validate-error-field.form-checkbox::before{
+            border: 2px solid $error;
         }
 
         &-btn{
@@ -95,6 +114,11 @@
             margin-top: 15px;
         }
 
+    }
+
+    .just-validate-error-label{
+
+        display: none;
     }
 }
 

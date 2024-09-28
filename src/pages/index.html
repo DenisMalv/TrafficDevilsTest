@@ -819,17 +819,17 @@
         <p class="form-section-sub-title">We! Let's start our path to success!</p>
 
         <form action="#" class="form" id="form">
-          <label for="form-name">
-            <input class="form-input" type="text" name="name" id="form-name" placeholder="Full name">
+          <label class="form-label" for="form-name">
+            <input class="form-input" type="text" name="name" id="form-name" placeholder="Full name" autocomplete="off">
           </label>
-          <label for="form-email">
+          <label class="form-label " for="form-email">
             <input class="form-input" type="email" name="email" id="form-email" placeholder="Email address*" >
           </label>
-          <label for="form-message">
-            <input class="form-input" type="text" name="name" id="form-message" placeholder="Message*" >
+          <label class="form-label " for="form-message">
+            <input class="form-input" type="text" name="message" id="form-message" placeholder="Message*" autocomplete="off" >
           </label>
 
-          <label class="form-label-checkbox flex al-c gap-10" for="form-checkbox">
+          <label class="form-label form-label-checkbox  flex al-c gap-10" for="form-checkbox">
             <input class="form-checkbox" type="checkbox" name="checkbox" id="form-checkbox" >
             <span>Yes, I have read and agree to the Data Privacy and Legal Notice.*</span>
           </label>
@@ -838,7 +838,7 @@
             Send
             <svg class="btn-svg" width="14" height="14" alt="icon search" >
               <use href="../img/icons/icon-sprite.svg#btn-arrow"></use>
-          </svg>
+            </svg>
           </button>
 
         </form>
@@ -918,6 +918,8 @@
     </div>
 
   </div>
+
+
 
 </body>
 </html>
