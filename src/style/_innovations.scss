@@ -1,14 +1,19 @@
 .innovations-list{
+    
 
     &__item{
         width: 387px;
+        min-height: 100%;
+        display: flex;
+        flex-direction: column;
     }
 }
 
 .innovation-text-container{
     display: flex;
     flex-direction: column;
-    height: 223px;
+    gap: 20px;
+    height: 100%;
 }
 
 .innovation-img{
@@ -21,7 +26,6 @@
 .innovation-sup-title{
     // #5646CC33
     padding: 9px 30px 10px 30px;
-    margin-bottom: 20px;
     background-color: #5646CC33;
     border-radius: 50px;
     max-width: max-content;
@@ -42,5 +46,4 @@
 
 .innovation-descr{
     font-size: 15px;
-    margin-bottom: auto;
 }
