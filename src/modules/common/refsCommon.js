@@ -16,7 +16,10 @@ const refsCommon ={
     // sectionGallery:document.getElementById('last-works'),
     // sectionPrice:document.getElementById('calculator'),
     // sectionContacts:document.getElementById('footer'),
-    
+
+    // // forms
+
+    form: document.querySelector('.form')
     
 }
 
