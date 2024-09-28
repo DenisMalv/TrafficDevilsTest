@@ -2,6 +2,17 @@
     padding-top: 15px;
     padding-bottom: 80px;
 
+            @include desktop {
+            background-image: url('../img/hero/hero.webp');
+            // background-position: center;
+            background-position: bottom 80px right calc(50% - 304px);
+            background-repeat: no-repeat;
+            background-size: clamp(540px, 20.683rem + 20.42vw, 589px) auto;
+            @include retina{
+                background-image: url('../img/hero/hero@2x.webp');
+            }
+        }   
+
     & .sup-title{
         font-size: 14px;
         line-height: 1.5;
@@ -25,24 +36,7 @@
 }
 
 .hero-text-container{
-    position: relative;
+
     width: 569px;
     padding-bottom: 44px;
-    &::after{
-        content: '';
-        position: absolute;
-        bottom: 0;
-        right: -610px;
-
-        width: 589px;
-        height: 427px;
-
-
-        @include desktop {
-            background-image: url('../img/hero/hero.webp');
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: 589px auto;
-        }   
-    }
 }
