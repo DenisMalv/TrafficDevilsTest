@@ -6,20 +6,20 @@
   padding-top: 0;
   padding-bottom: 0;
 
-  // max-width: 1200px;
-
-  // max-width: clamp(352px, -0.617rem + 97vw, 1376px)
+  box-sizing: content-box;
 
   @include mobile {
     max-width: 376px;
+    padding: 0 10px;
   }
 
   @include tablet {
     max-width: 768px;
+    padding: 0 15px;
   }
 
   @include desktop {
     padding: 0 32px;
-    max-width: 1264px;
+    max-width: 1200px;
   }
 }

@@ -5,7 +5,7 @@
             @include desktop {
             background-image: url('../img/hero/hero.webp');
             // background-position: center;
-            background-position: bottom 80px right calc(50% - 304px);
+            background-position: bottom 80px right calc(50% - 306px);
             background-repeat: no-repeat;
             background-size: clamp(540px, 20.683rem + 20.42vw, 589px) auto;
             @include retina{

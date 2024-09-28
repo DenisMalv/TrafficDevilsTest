@@ -43,7 +43,7 @@ h1,h2{
 
 // btn hover focus active 
 .hfa{
-  transition: $transition;
+  transition: $transition-btn;
 
   &:hover,&:focus{
     color: $accent;
@@ -162,7 +162,7 @@ h1,h2{
     background-color: $accent;
     opacity: 0;
 
-    transition: $transition;
+    transition: $transition-btn;
   }
 
   &:hover, &:focus{
