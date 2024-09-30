@@ -55,12 +55,20 @@
             <a href="#" aria-label="Link to Contact us section">Contact us</a>
           </li>
         </ul>
-        <p class="change-lang">
-          Global (EN)
-          <svg class="svg" width="12" height="12" alt="icon dropdown" >
+        <div class="change-lang-container" tabindex="0" id="header-lang-dropdown">
+          <div class="change-lang">
+            <span class="change-lang-text">Global (EN)</span>
+            <svg class="svg" width="12" height="12" alt="icon dropdown">
               <use href="../img/icons/icon-sprite.svg#dropdown"></use>
-          </svg>
-        </p>
+            </svg>
+          </div>
+          <ul class="lang-dropdown" >
+            <li tabindex="-1" data-value="Global (EN)">Global (EN)</li>
+            <li tabindex="-1" data-value="Français (FR)">Français (FR)</li>
+            <li tabindex="-1" data-value="Español (ES)">Español (ES)</li>
+            <li tabindex="-1" data-value="Deutsch (DE)">Deutsch (DE)</li>
+          </ul>
+        </div>
       </nav>
     </div>
   </header>

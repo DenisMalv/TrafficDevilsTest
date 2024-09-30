@@ -8,14 +8,16 @@ const refsCommon ={
     cookieSettings:document.getElementById('js-settings'),
     cookieAccept:document.getElementById('js-accept'),
     cookieReject:document.getElementById('js-reject'),
-  
+
+    // dropdown
+
+    headerLangDropdown: document.getElementById('header-lang-dropdown'),
+    headerDropdownList:document.querySelector('.lang-dropdown'),
+    headerlangBtn:document.querySelector('.change-lang'),
+    headerLangBtnText:document.querySelector('.change-lang-text'),
 
     // //sections
-    // sectionAboutUs:document.getElementById('about-us'),
-    // sectionServices:document.getElementById('services'),
-    // sectionGallery:document.getElementById('last-works'),
-    // sectionPrice:document.getElementById('calculator'),
-    // sectionContacts:document.getElementById('footer'),
+    
 
     // // forms
 

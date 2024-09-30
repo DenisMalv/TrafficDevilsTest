@@ -34,9 +34,63 @@
     }
 }
 
+.change-lang-container{
+    position: relative;
+
+    &.open .lang-dropdown{
+      opacity: 1;
+      pointer-events: all;
+    }
+    &.open .svg{
+        transform: rotateX(180deg);
+    }
+}
+
 .change-lang{
     font-weight: 600;
     padding-top: 10px;
     padding-bottom: 9px;
     cursor: pointer;
+    transition: $transition-btn;
+
+    &:hover,&:focus{
+        color: $accent;
+    }
+
+    & .svg{
+        transition: transform 0.3s linear;
+    }
+
+    
+}
+
+.lang-dropdown{
+    position: absolute;
+    top: 40px;
+    right: 0;
+    opacity: 0;
+    pointer-events: none;
+
+    background-color: #5646CC1A;
+    border-radius: 12px;
+    min-width: 130px;
+    width: 100%;
+    overflow: hidden;
+    transition: $transition-btn;
+
+
+    & li{
+        cursor: pointer;
+        padding: 10px 15px;
+        transition: $transition-btn;
+        
+        &:hover,&:focus{
+            background-color: $accent;
+            color: $white;
+        }
+        &:active{
+            background-color: #5646CC1A;
+        }
+    }
+
 }
