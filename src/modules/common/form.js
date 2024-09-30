@@ -1,9 +1,12 @@
 import refsCommon from "./refsCommon";
-import JustValidate from 'just-validate';
+// import JustValidate from 'just-validate';
 
 const {form} = refsCommon
 
-const validate = new JustValidate('#form');
+
+document.addEventListener('DOMContentLoaded', async () => {
+  const { default: JustValidate } = await import('just-validate');
+  const validate = new JustValidate('#form');
 
 
 validate
@@ -41,8 +44,11 @@ validate
     for (let [name, value] of formData.entries()) {
         console.log(`${name}: ${value}`);
       }
+    form.reset()
     // fetch('/submit', {
     //   method: 'POST',
     //   body: formData,
     // });
   });
+
+})
