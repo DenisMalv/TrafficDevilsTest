@@ -1,35 +1,94 @@
 .hero{
     padding-top: 15px;
-    padding-bottom: 80px;
 
-            @include desktop {
+
+        @include tablet {
+
             background-image: url('../img/hero/hero.webp');
             // background-position: center;
-            background-position: bottom 80px right calc(50% - 306px);
+            background-position: bottom 80px right calc(50% - 216px);
             background-repeat: no-repeat;
             background-size: clamp(540px, 20.683rem + 20.42vw, 589px) auto;
             @include retina{
                 background-image: url('../img/hero/hero@2x.webp');
             }
-        }   
+        }  
+        
+        @include low-desktop{
+            background-position: bottom 80px right calc(50% - 306px);
+        }
 
     & .sup-title{
-        font-size: 14px;
+        font-size: 12px;
         line-height: 1.5;
         font-weight: 400;
+        margin-bottom: 40px;
+
+        @include tablet{
+        font-size: 14px;
         margin-bottom: 75px;
+        }
     }
 
     .title{
-        font-size: 50px;
-        line-height: 1.1;
-        font-weight: 800;
+        // font-size: 50px;
+        // line-height: 1.1;
+        // font-weight: 800;
         margin-bottom: 15px;
+        position: relative;
+        z-index: 1;
+
+        @include tablet{
+
+     
+            &::before{
+                content: "";
+                position: absolute;
+                top: 20px;
+                left: 50%;
+                width: 50%;
+                height: 60px;
+                box-shadow: 20px 0px 50px 62px white;
+                border-radius: 50%;
+                background-color: white;
+                z-index: -1;
+
+            }
+        }
+        @include low-desktop{
+            &::before{
+                display: none;
+            }
+        }
     }
 
     .descr{
         margin-bottom: 30px;
         max-width: 488px;
+        position: relative;
+        z-index: 1;
+        @include tablet{
+
+       
+            &::before{
+                content: "";
+                position: absolute;
+                top: 20px;
+                left: 50%;
+                width: 50%;
+                height: 60px;
+                box-shadow: 20px 0px 50px 62px white;
+                border-radius: 50%;
+                background-color: white;
+                z-index: -1;
+
+            }
+        }
+        @include low-desktop{
+            &::before{
+                display: none;
+            }
+        }
     }
 
 
@@ -37,6 +96,10 @@
 
 .hero-text-container{
 
-    width: 569px;
-    padding-bottom: 44px;
+    width: 100%;
+    max-width: 569px;
+
+    @include tablet{
+        padding-bottom: 44px;
+    }
 }

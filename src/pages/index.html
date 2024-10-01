@@ -17,57 +17,69 @@
 <body style="overflow: auto;">
   <header class="header" id="header">
     <div class="container">
-      <nav role="navigation" aria-label="main navigation" class="flex navigation">
+      <nav role="navigation" aria-label="main navigation" class="flex jb navigation">
         <div class="flex al-c jc gap-20" >
           <a href="" aria-label="company logo">
-            <img src="../img/header/logo.svg" alt="Company Logo"  width="196" height="40">
+            <img src="../img/header/logo.svg" alt="Company Logo"  width="196" height="40" class="logo">
           </a>
           <svg class="" width="18" height="18" alt="icon search" >
               <use href="../img/icons/icon-sprite.svg#search"></use>
           </svg>
         </div>
-        <ul class="header-nav list flex al-c jc gap-20">
-          <li class="list__item">
-            <a href="#" aria-label="Link to home">Home</a>
-          </li>
-          <li class="list__item">
-            <a href="#" aria-label="Link to Industries section">Industries</a>
-          </li>
-          <li class="list__item">
-            <a href="#" aria-label="Link to Services section">Services</a>
-          </li>
-          <li class="list__item">
-            <a href="#" aria-label="Link to Technologies section">Technologies</a>
-          </li>
-          <li class="list__item">
-            <a href="#" aria-label="Link to Success section">Success</a>
-          </li>
-          <li class="list__item">
-            <a href="#" aria-label="Link to About section">About</a>
-          </li>
-          <li class="list__item">
-            <a href="#" aria-label="Link to Insights section">Insights</a>
-          </li>
-          <li class="list__item">
-            <a href="#" aria-label="Link to Career section">Career</a>
-          </li>
-          <li class="list__item">
-            <a href="#" aria-label="Link to Contact us section">Contact us</a>
-          </li>
-        </ul>
-        <div class="change-lang-container" tabindex="0" id="header-lang-dropdown">
-          <div class="change-lang">
-            <span class="change-lang-text">Global (EN)</span>
-            <svg class="svg" width="12" height="12" alt="icon dropdown">
-              <use href="../img/icons/icon-sprite.svg#dropdown"></use>
-            </svg>
-          </div>
-          <ul class="lang-dropdown" >
-            <li tabindex="-1" data-value="Global (EN)">Global (EN)</li>
-            <li tabindex="-1" data-value="Français (FR)">Français (FR)</li>
-            <li tabindex="-1" data-value="Español (ES)">Español (ES)</li>
-            <li tabindex="-1" data-value="Deutsch (DE)">Deutsch (DE)</li>
+        <div class="flex al-c header-nav-container">
+          <ul class="header-nav list flex al-c jc gap-20">
+            <li class="list__item">
+              <a href="#" aria-label="Link to home">Home</a>
+            </li>
+            <li class="list__item">
+              <a href="#" aria-label="Link to Industries section">Industries</a>
+            </li>
+            <li class="list__item">
+              <a href="#" aria-label="Link to Services section">Services</a>
+            </li>
+            <li class="list__item">
+              <a href="#" aria-label="Link to Technologies section">Technologies</a>
+            </li>
+            <li class="list__item">
+              <a href="#" aria-label="Link to Success section">Success</a>
+            </li>
+            <li class="list__item">
+              <a href="#" aria-label="Link to About section">About</a>
+            </li>
+            <li class="list__item">
+              <a href="#" aria-label="Link to Insights section">Insights</a>
+            </li>
+            <li class="list__item">
+              <a href="#" aria-label="Link to Career section">Career</a>
+            </li>
+            <li class="list__item">
+              <a href="#" aria-label="Link to Contact us section">Contact us</a>
+            </li>
           </ul>
+          <div class="change-lang-container" tabindex="0" id="header-lang-dropdown">
+            <div class="change-lang">
+              <span class="change-lang-text">Global (EN)</span>
+              <svg class="svg" width="12" height="12" alt="icon dropdown">
+                <use href="../img/icons/icon-sprite.svg#dropdown"></use>
+              </svg>
+            </div>
+            <ul class="lang-dropdown" >
+              <li tabindex="-1" data-value="Global (EN)">Global (EN)</li>
+              <li tabindex="-1" data-value="Français (FR)">Français (FR)</li>
+              <li tabindex="-1" data-value="Español (ES)">Español (ES)</li>
+              <li tabindex="-1" data-value="Deutsch (DE)">Deutsch (DE)</li>
+            </ul>
+          </div>
+        </div>
+        <div class="header-burder-container">
+          <button type="button" role="button" class="burger-button" id="burger-btn" >
+            <svg class="burger-button-icon" width="32" height="32" alt="Іконка відкриття мобільного меню навігації" >
+                <use href="../img/icons/icon-sprite.svg#menu-burger"></use>
+            </svg>
+            <svg class="burger-button-icon btn-hide" width="32" height="32" alt="Іконка закриття мобільного меню навігації" >
+                <use href="../img/icons/icon-sprite.svg#close"></use>
+            </svg>
+          </button>
         </div>
       </nav>
     </div>
@@ -93,20 +105,20 @@
     <section class="companies" id="companies">
       <h2 class="is-hidden" aria-labelledby>Our partner company</h2>
       <div class="container">
-        <ul class="compaly-list flex al-c jc gap-80">
-          <li class="compaly-list__item">
+        <ul class="company-list flex al-c jc gap-80">
+          <li class="company-list__item">
             <img src="../img/companies/uma.svg" alt="company UMA" loading="lazy" width="104" height="60">
           </li>
-          <li class="compaly-list__item">
+          <li class="company-list__item">
             <img src="../img/companies/m3.svg" alt="company M3 Health" loading="lazy" width="80" height="60">
           </li>
-          <li class="compaly-list__item">
+          <li class="company-list__item">
             <img src="../img/companies/instem.svg" alt="company instem" loading="lazy" width="160" height="60">
           </li>
-          <li class="compaly-list__item">
+          <li class="company-list__item">
             <img src="../img/companies/opel.svg" alt="company Opel" loading="lazy" width="180" height="60">
           </li>
-          <li class="compaly-list__item">
+          <li class="company-list__item">
             <img src="../img/companies/trov.svg" alt="company trov" loading="lazy" width="100" height="60">
           </li>
         </ul>
@@ -115,7 +127,7 @@
     <section class="innovations" id="innovations">
       <div class="container">
         <h2 class="is-hidden" aria-labelledby>Tailored Solutions for Digital Transformation</h2>
-        <ul class="innovations-list flex jc gap-20">
+        <ul class="innovations-list flex gap-20">
           <li class="innovations-list__item">
             <img
             class="innovation-img"
@@ -197,7 +209,7 @@
       <div class="container ">
         <h2 class="mb-15">How we work</h2>
         <p class="mb-30">We merge top-tier service delivery standards with unparalleled levels of solution customization.</p>
-        <ul class="flex jc gap-20">
+        <ul class="how-we-work-list">
           <li class="how-we-work-list__item">
             <p class="sup-title">1 step</p>
             <h3 class="title">Contact Us</h3>
