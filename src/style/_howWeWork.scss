@@ -12,6 +12,7 @@
         @include low-desktop{
             gap: 20px;
             flex-direction: row;
+            align-items: normal;
         }
     }
 
@@ -84,25 +85,7 @@
         
         @include tablet{
             max-width: 500px;
-
-            &::before{
-
-            }
-
-            &::after{
-
-            }
         }
-
-
-
-
-
-
-
-
-
-
 
         .sup-title{
             padding: 9px 30px 10px 30px;

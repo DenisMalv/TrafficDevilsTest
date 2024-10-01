@@ -8,11 +8,10 @@
         margin: 0 auto;
         max-width: 794px;
     }
-    @include low-desktop{
+
+    @include desktop{
         justify-content: center;
         max-width: 100%;
-    }
-    @include desktop{
         flex-wrap: nowrap;
     }
 

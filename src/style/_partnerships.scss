@@ -2,4 +2,29 @@
     color: $white;
 
     background-color: $accent;
+
+    .partnerships-list{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        gap: 20px;
+
+        & img{
+            max-width: 100px;
+
+            @include tablet{
+                max-width: 130px;
+            }
+
+            @include low-desktop{
+                max-width: 182px;
+            }
+            @include desktop{
+                max-width: 100%;
+            }
+        }
+
+    }
 }
