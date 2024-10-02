@@ -1,5 +1,19 @@
 .questions{
 
+    &-content-wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+
+        @include low-desktop{
+            align-items: normal;
+            flex-direction: row;
+        }
+        
+    }
+
     &-list{
         width: 100%;
         max-width: 590px;
@@ -12,7 +26,7 @@
         margin-top: 0!important;
         border: none!important;
         background-color: #5646CC1A!important;
-        padding: 30px;
+        padding: 20px;
         border-radius: 20px;
 
         display: flex;
@@ -22,6 +36,18 @@
 
         transition: $transition;
         min-height: 120px;
+
+        @include tablet{
+            padding: 30px;
+        }
+
+        @include low-desktop{
+            min-height: 140px;
+        }
+
+        @include desktop{
+            min-height: 120px;
+        }
 
         h3{
             width: 100%;
@@ -36,25 +62,55 @@
 
                 content: '' !important;
                 position: absolute;
-                right: -72px!important;
+                right: -42px!important;
                 top: 50%!important;
                 transform: translateY(-50%)!important;
                 width: 30px;
                 height: 30px;
                 opacity: 1;
                 background-image: url('../img/icons/minus.svg');
+
+                @include tablet{
+                    right: -72px!important;
+                    top: 50%!important;
+                }
+
+                @include low-desktop{
+                    right: -50px!important;
+                    top: 50%!important;
+                }
+
+                @include desktop{
+                    right: -72px!important;
+                    top: 50%!important;
+                }
             }
             &::before{
               
                 content: '' !important;
                 position: absolute;
-                right: -72px!important;
+                right: -42px!important;
                 top: 50%!important;
                 transform: translateY(-50%)!important;
                 width: 30px;
                 height: 30px;
                 opacity: 0;
                 background-image: url('../img/icons/plus.svg');
+
+                @include tablet{
+                    right: -72px!important;
+                    top: 50%!important;
+                }
+
+                @include low-desktop{
+                    right: -50px!important;
+                    top: 50%!important;
+                }
+
+                @include desktop{
+                    right: -72px!important;
+                    top: 50%!important;
+                }
             }
         }
     }
@@ -65,7 +121,7 @@
         font-size: 18px !important;
         line-height: 1.1 !important;
         width: 100% !important;
-        max-width: 458px !important;
+        max-width: 272px !important;
 
         color: $black !important;
         text-align: left !important;
@@ -79,10 +135,22 @@
         margin: 0 !important;
         border: 0 !important;
 
+        @include tablet{
+            max-width: 458px !important;
+        }
+
+        @include low-desktop{
+            max-width: 378px !important;
+        }
+
+        @include desktop{
+            max-width: 458px !important;
+        }
+
         &::after{
             content: '' !important;
             position: absolute;
-            right: -72px!important;
+            right: -42px!important;
             top: 50%!important;
             transform: translateY(-50%)!important;
             width: 30px!important;
@@ -90,11 +158,26 @@
             opacity: 0;
             background-image: url('../img/icons/minus.svg');
             transition: $transition;
+
+            @include tablet{
+                right: -72px!important;
+                top: 50%!important;
+            }
+
+            @include low-desktop{
+                right: -50px!important;
+                top: 50%!important;
+            }
+
+            @include desktop{
+                right: -72px!important;
+                top: 50%!important;
+            }
         }
         &::before{
             content: '' !important;
             position: absolute;
-            right: -72px!important;
+            right: -42px!important;
             top: 50%!important;
             transform: translateY(-50%)!important;
             width: 30px;
@@ -102,16 +185,35 @@
             opacity: 1;
             background-image: url('../img/icons/plus.svg');
             transition: $transition;
+
+            @include tablet{
+                right: -72px!important;
+                top: 50%!important;
+            }
+
+            @include low-desktop{
+                right: -50px!important;
+                top: 50%!important;
+            }
+
+            @include desktop{
+                right: -72px!important;
+                top: 50%!important;
+            }
         }
     }
 
     &-list__item-descr{
         font-family: $main-font!important;
         margin-top: 20px!important;
-        font-size: 15px!important;
+        font-size: 14px!important;
         line-height: 1.3!important;
         color: $black!important;
         padding: 0!important;
+
+        @include tablet{
+            font-size: 15px!important;
+        }
     }
 
 }

@@ -14,77 +14,129 @@
 
     .reviewsSwiper {
         width: 100%;
+
     }
 
     .swiper-wrapper{
         height: 239px;
+        // min-height: 650px; //for mobile grid 2 rows
+        // max-height: 900px; //for mobile grid 2 rows
+        @include tablet{
+            min-height: 230px;
+            max-height: 100%;
+        }
     }
   
     .swiper-slide {
         width: 589px;
-        min-height: 100%;
         background-color: $white;
         padding: 30px;
         border-radius: 20px;
 
         cursor: grab;
 
-        h4{
-            font-size: 22px;
-            line-height: 1.1;
+        min-height: 100%;
+
+        h3{
             margin-bottom: 15px;
         }
 
         p{
-            font-size: 15px;
+            font-size: 14px;
             margin-bottom: auto;
+
+            @include low-desktop{
+                font-size: 15px;
+            }
         }
     }
 
     .pagination-wrapper{
-        margin-top: 30px;
         position: relative;
-        width: 82px;
-        height: 20px;
-        margin-left: auto;
-        margin-right: auto;
+        width: 160px;
+        height: 36px;
+        left: 0;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 20px auto 0;
+
+        @include low-desktop{
+            position: relative;
+            width: 82px;
+            height: 20px;
+            display: block;
+            margin: 30px auto 0;
+        }
     }
 
     .swiper-pagination{
         position: static;
         font-size: 15px;
         line-height: 1.3;
+        max-width: 40px;
+        @include low-desktop{
+            max-width: 100%;
+        }
     }
 
     .swiper-button-next{
         right: 0;
-        top: 100%;
-        width: 20px;
-        height: 20px;
+        top: 50%;
+        width: 40px;
+        height: 40px;
+
+        @include low-desktop{
+            width: 20px;
+            height: 20px;
+            top: 100%;
+        }
         &::after{
             content: '';
             position: absolute;
-            width: 20px;
-            height: 20px;
+            width: 40px;
+            height: 40px;
             background-image: url('../img/icons/arrow-right.svg');
+            background-size: 36px 36px;
             background-position: center;
             background-repeat: no-repeat;
+
+            @include low-desktop{
+                width: 20px;
+                height: 20px;
+                background-size: 20px 20px;
+            }
         }
     }
 
     .swiper-button-prev{
         left: 0;
-        top: 100%;
-        width: 20px;
-        height: 20px;
+        top: 50%;
+        width: 40px;
+        height: 40px;
+
+        @include low-desktop{
+            width: 20px;
+            height: 20px;
+            top: 100%;
+        }
+
         &::after{
             content: '';
             position: absolute;
-            width: 20px;
-            height: 20px;
+            width: 40px;
+            height: 40px;
             background-image: url('../img/icons/arrow-left.svg');
+            background-size: 36px 36px;
             background-position: center;
             background-repeat: no-repeat;
+
+            @include low-desktop{
+                width: 20px;
+                height: 20px;
+                background-size: 20px 20px;
+            }
         }
     }
 }

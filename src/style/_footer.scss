@@ -1,11 +1,30 @@
 .footer{
-    padding-top: 80px;
+    padding-top: 40px;
     padding-bottom: 20px;
 
     font-size: 14px;
     line-height: 1.5;
 
+    @include tablet{
+      padding-top: 60px;
+    }
+
+    @include low-desktop{
+      padding-top: 80px;
+    }
+
     &-nav{
+        & li{
+          display: none;
+          &:first-child{
+            display: block;
+          }
+
+          @include low-desktop{
+            display: block;
+          }
+        }
+
         & a{
             transition: $transition;
         }

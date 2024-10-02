@@ -1,4 +1,33 @@
 .companies{
     padding: 18px 0px;
     background-color: $accent;
+
+    .company-list{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+
+        @include tablet {
+            gap: 60px;
+        }
+        @include low-desktop{
+            gap: 80px;
+        }
+
+        & img{
+            max-width: 100px;
+            width: 100%;
+            
+            max-height: 40px;
+
+            @include low-desktop{
+                max-width: max-content;
+                max-height: max-content;
+            }
+        }
+
+        
+    }
 }

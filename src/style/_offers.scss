@@ -4,6 +4,11 @@
    .sub-title{
     max-width: 692px;
     margin-bottom: 30px;
+    font-size: 14px;
+
+    @include low-desktop{
+        font-size: 16px;
+    }
    }
 
    &-list{
@@ -21,7 +26,16 @@
 
         max-width: 459px;
         width: 100%;
+        
+        @include tablet{
+            max-width: 359px;
+        }
+        
+        @include low-desktop{
+            max-width: 318px;
+        }
         @include desktop{
+
             max-width: 386px;
         }
         
@@ -37,11 +51,18 @@
             color: $white;
         }
         &__title{
-            font-size: 24px;
+            font-size: 18px;
             line-height: 1.1;
+
+            @include low-desktop{
+                font-size: 24px;
+            }
         }
         &__descr{
-            font-size: 15px;
+            font-size: 14px;
+            @include low-desktop{
+                font-size: 15px;
+            }
         }
     }
 }

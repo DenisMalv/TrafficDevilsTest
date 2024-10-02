@@ -1,11 +1,37 @@
 .innovations-list{
-    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    @include tablet{
+        justify-content: flex-start;
+        margin: 0 auto;
+        max-width: 794px;
+    }
+
+    @include desktop{
+        justify-content: center;
+        max-width: 100%;
+        flex-wrap: nowrap;
+    }
 
     &__item{
-        width: 387px;
+        width: 100%;
+        
         min-height: 100%;
         display: flex;
         flex-direction: column;
+        gap: 20px;
+
+        @include tablet{
+            flex-direction: row;
+        }
+
+        @include low-desktop{
+            max-width: 387px;
+            gap: 15px;
+            flex-direction: column;
+        }
     }
 }
 
@@ -20,7 +46,6 @@
     display: block;
     line-height: 0;
     font-size: 0;
-    margin-bottom: 15px;
 }
 
 .innovation-sup-title{
@@ -39,11 +64,15 @@
 }
 
 .innovation-title{
-    font-size: 22px;
-    line-height: 1.1;
+    // font-size: 22px;
+    // line-height: 1.1;
     margin-bottom: 15px;
 }
 
 .innovation-descr{
-    font-size: 15px;
+    font-size: 14px;
+    @include low-desktop{
+        font-size: 15px;
+    }
+   
 }

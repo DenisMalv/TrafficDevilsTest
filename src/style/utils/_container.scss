@@ -2,15 +2,13 @@
 .container {
   width: 100%;
   margin: 0 auto;
+  padding: 0 10px;
 
-  padding-top: 0;
-  padding-bottom: 0;
-
-  box-sizing: content-box;
+  box-sizing: border-box;
 
   @include mobile {
     max-width: 376px;
-    padding: 0 10px;
+
   }
 
   @include tablet {
@@ -18,8 +16,12 @@
     padding: 0 15px;
   }
 
+  @include low-desktop{
+    max-width: 1024px;
+  }
+
   @include desktop {
     padding: 0 32px;
-    max-width: 1200px;
+    max-width: 1264px;
   }
 }

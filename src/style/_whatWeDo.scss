@@ -1,20 +1,57 @@
 .what-we-do{
     padding-bottom: 0px;
 
+    &-content-wrapper{
+        display: flex;
+        flex-direction: column;
+        gap: 13px;
+
+        @include low-desktop{
+            flex-direction: row;
+        }
+    }
+
+    .descr{
+        font-size: 14px;
+        margin-bottom: 20px;
+
+        @include tablet{
+            margin-bottom: 40px;
+        }
+    }
+
+
     .left-container{
-        width: 692px;
-        margin-bottom: 50px;
+        max-width: 692px;
+        width: 100%;
+        margin-bottom: 206px;
+
+        @include tablet{
+            margin-bottom: 100px;
+        }
+
+        @include low-desktop{
+            margin-bottom: 50px;
+        }
     }
 
     .right-container{
         display:flex;
         align-items: flex-end;
+
+        @include tablet{
+            justify-content: flex-end;
+        }
+
+        @include low-desktop{
+            justify-content: baseline;
+        }
         
         
 
         .author-text-container{
             position: relative;
-            left: clamp(-208px, -68.467rem + 86.67vw, 0px);
+            top: -10px;
             max-width: 153px;
             display: flex;
             flex-direction: column;
@@ -23,17 +60,32 @@
             font-size: 13px;
             line-height: 1.3;
 
+            @include tablet{
+                max-width: 200px;
+                top: 0;
+                left: clamp(-208px, -68.467rem + 86.67vw, 0px);
+            }
+
+            @include low-desktop{
+                max-width: 153px;
+            }
+
             &::after{
                 content: '';
                 position: absolute;
-                top: -327px;
+                top: -219px;
                 left: 0;
                 width: 495px;
-                height: 378px;
+                height:  280px;
                 background-image: url('../img/whatWeDo/whatWeDo.webp');
                 background-position: center;
                 background-repeat: no-repeat;
                 background-size: contain;
+
+                @include tablet{
+                    height: 378px;
+                    top: -327px;
+                }
         
                 @include retina {
                     background-image: url('../img/whatWeDo/whatWeDo@2x.webp');
@@ -66,60 +118,103 @@
 
         h3{
             color: $accent;
-            font-size: 22px;
-            line-height: 1.1;
             margin-bottom: 15px;
         }
 
         p{
-            font-size: 15px;
+            font-size: 14px;
             margin-bottom: auto;
+
+            @include tablet{
+                font-size: 15px;
+            }
         }
     }
 
     .pagination-wrapper{
-        position: absolute;
-        width: 82px;
-        height: 20px;
+        position: relative;
+        width: 160px;
+        height: 36px;
         left: 0;
         bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @include low-desktop{
+            position: absolute;
+            width: 82px;
+            height: 20px;
+            display: block;
+        }
     }
 
     .swiper-pagination{
         position: static;
         font-size: 15px;
         line-height: 1.3;
+        max-width: 40px;
+        @include low-desktop{
+            max-width: 100%;
+        }
     }
 
     .swiper-button-next{
         right: 0;
-        top: 100%;
-        width: 20px;
-        height: 20px;
+        top: 50%;
+        width: 40px;
+        height: 40px;
+
+        @include low-desktop{
+            width: 20px;
+            height: 20px;
+            top: 100%;
+        }
         &::after{
             content: '';
             position: absolute;
-            width: 20px;
-            height: 20px;
+            width: 40px;
+            height: 40px;
             background-image: url('../img/icons/arrow-right.svg');
+            background-size: 36px 36px;
             background-position: center;
             background-repeat: no-repeat;
+
+            @include low-desktop{
+                width: 20px;
+                height: 20px;
+                background-size: 20px 20px;
+            }
         }
     }
 
     .swiper-button-prev{
         left: 0;
-        top: 100%;
-        width: 20px;
-        height: 20px;
+        top: 50%;
+        width: 40px;
+        height: 40px;
+
+        @include low-desktop{
+            width: 20px;
+            height: 20px;
+            top: 100%;
+        }
+
         &::after{
             content: '';
             position: absolute;
-            width: 20px;
-            height: 20px;
+            width: 40px;
+            height: 40px;
             background-image: url('../img/icons/arrow-left.svg');
+            background-size: 36px 36px;
             background-position: center;
             background-repeat: no-repeat;
+
+            @include low-desktop{
+                width: 20px;
+                height: 20px;
+                background-size: 20px 20px;
+            }
         }
     }
 }

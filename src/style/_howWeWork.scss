@@ -2,14 +2,91 @@
     background-color: $black;
     color: $white;
 
+    &-list{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 64px;
+
+        @include low-desktop{
+            gap: 20px;
+            flex-direction: row;
+            align-items: normal;
+        }
+    }
+
     &-list__item{
         color: $black;
         padding: 20px;
         background-color: $white;
         border-radius: 20px;
 
-        width: 285px;
+        max-width: 285px;
+        width: 100%;
+
+        position: relative;
+
+        &:first-child{
+            &::before{
+                display: none;
+            }
+        }
+        &:last-child{
+            &::after{
+                display: none;
+            }
+        }
+        &::before{
+            content: "";
+            position: absolute;
+            top: -18px;
+            right: -30px;
+            height: 48%;
+            border-top: 2px solid #5646CC;
+            border-right: 2px solid #5646CC;
+            border-bottom: 2px solid #5646CC;
+            width: 64px;
+            z-index: -1;
+
+            @include tablet{
+                top: -24px;
+                right: -30px;
+                height: 54%;
+            }
+
+            @include low-desktop{
+                display: none;
+            }
         
+        }
+        &::after{
+            content: "";
+            position: absolute;
+            top: 90px;
+            right: -30px;
+            height: 63%;
+            border-top: 2px solid #5646CC;
+            border-right: 2px solid #5646CC;
+            border-bottom: 2px solid #5646CC;
+            width: 64px;
+            z-index: -1;
+
+            @include tablet{
+                top: 100px;
+                right: -30px;
+                height: 54%;
+            }
+
+            @include low-desktop{
+                display: none;
+            }
+        }
+        
+        @include tablet{
+            max-width: 500px;
+        }
+
         .sup-title{
             padding: 9px 30px 10px 30px;
             margin-bottom: 15px;
@@ -24,38 +101,70 @@
             font-weight: 600;
         }
         .title{
-            font-size: 22px;
-            line-height: 1.1;
             margin-bottom: 10px;
         }
         .descr{
-            font-size: 15px;
+            font-size: 14px;
+            @include low-desktop{
+                font-size: 15px;
+            }
         }
     }
 
     &__sub-list{
-        gap: clamp(6px, -13.367rem + 21.67vw, 60px);
+        
+        flex-direction: column;
+        top: -462px;
+        left: 79px;
+        gap: 205px;
+        position: relative;
+        height: 0;
+
+        @include tablet{
+
+            top: -417px;
+            left: 375px;
+            gap: 186px;
+
+        }
+        @include low-desktop{
+            height: auto;
+            position: static;
+            flex-direction: row;
+            gap: clamp(6px, -13.367rem + 21.67vw, 60px);
+        }
     }
 
     &__sub-list-item{
         width: 245px;
         position: relative;
 
-        &::before{
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: calc(100% - 4px);
-            height: 30px;
-            border-left: 2px solid $accent;
-            border-right: 2px solid $accent;
-            border-bottom: 2px solid $accent;
-  
+        &:nth-child(2){
+            margin-top: 15px;
+            
+            @include tablet{
+                margin-top: 0;
+            }
         }
 
+        @include low-desktop{
+            &::before{
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: calc(100% - 4px);
+                height: 30px;
+                border-left: 2px solid $accent;
+                border-right: 2px solid $accent;
+                border-bottom: 2px solid $accent;
+      
+            }
+        }
+
+
         .sup-title{
-            margin: 42px auto;;
+            
             padding: 9px 30px 10px 30px;
             background-color: $accent;
             border-radius: 50px;
@@ -65,6 +174,13 @@
             font-size: 14px;
             line-height: 1.5;
             font-weight: 600;
+
+            margin-left: auto;
+
+            @include low-desktop{
+                margin: 42px auto;
+
+            }
         }
     }
 }

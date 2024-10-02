@@ -4,6 +4,7 @@ const options = {
   slidesPerView: 1,
   spaceBetween: 20,
   preloadSlides: 1,
+  autoHeight: true,
   lazy:true,
   lazyPreloadPrevNext:1,
   pagination: {
