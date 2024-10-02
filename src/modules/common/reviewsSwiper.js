@@ -1,6 +1,6 @@
 import Swiper from 'swiper/bundle';
 
-
+document.addEventListener('DOMContentLoaded', async () => {
 const reviewSwiper = new Swiper(".reviewsSwiper", {
     slidesPerView: 1,
     slidesPerGroup: 1,
@@ -47,3 +47,4 @@ const reviewSwiper = new Swiper(".reviewsSwiper", {
     
   });
 
+})

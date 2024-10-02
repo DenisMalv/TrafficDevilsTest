@@ -1,6 +1,7 @@
 import Swiper from 'swiper/bundle';
 
 
+document.addEventListener('DOMContentLoaded', async () => {
 
 const whatWeDoSwiper = new Swiper(".whatWeDoSwiper", {
     slidesPerView: 1,
@@ -23,3 +24,4 @@ const whatWeDoSwiper = new Swiper(".whatWeDoSwiper", {
     
   });
 
+})

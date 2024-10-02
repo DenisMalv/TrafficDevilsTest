@@ -3,6 +3,7 @@ import { setCookie, getCookie, deleteCookie } from "./cookie";
 
 const {popupModal,cookieAccept,cookieSettings,cookieReject, MODAL_ACTIVE} = refsCommon
 
+
 const onClickAccept = () =>{
 
     // cookie accept logic

@@ -1,8 +1,8 @@
 import refsCommon from "./refsCommon";
-
-
 const {burgerBtn, burgerModal, burgerNavList, MODAL_ACTIVE, DROPDOWN_ACTIVE, burgerLangDropdown } = refsCommon;
 
+
+document.addEventListener('DOMContentLoaded', async () => {
 
 const toggleBurger = (e,close=false)=>{
     const iconOpen = burgerBtn.querySelector('.js-burger-open')
@@ -43,4 +43,4 @@ burgerModal.addEventListener('mousedown',onClickOutsideBurger)
 
 
 
-
+})

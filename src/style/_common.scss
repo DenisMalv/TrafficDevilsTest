@@ -12,9 +12,11 @@ body {
   width: 100%;
 
   scroll-behavior: smooth;
+  overflow-x: hidden;
 
   @include tablet{
     font-size: 16px;
+    
   }
 }
 //   clamp(min, current, max)

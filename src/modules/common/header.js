@@ -4,6 +4,7 @@ const {headerDropdownList, headerlangBtn, headerLangDropdown, headerLangBtnText,
         burgerDropdownList, burgerlangBtn, burgerLangDropdown, burgerLangBtnText, DROPDOWN_ACTIVE } = refsCommon
 
 
+document.addEventListener('DOMContentLoaded', async () => {
 
 const toggleDropdown = (e,close = false) =>{
     // if(close){
@@ -78,3 +79,5 @@ const clickOutsideHeaderDropdownBurger = (e)=>{
 burgerlangBtn.addEventListener('mousedown', toggleDropdownBurger)
 burgerDropdownList.addEventListener('click', onChangeLangBurger)
 document.addEventListener('mousedown',clickOutsideHeaderDropdownBurger)
+
+})
