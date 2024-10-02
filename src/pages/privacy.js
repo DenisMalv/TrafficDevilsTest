@@ -15,6 +15,8 @@ import '../modules/common/header';
 
 //modals
 
+import '../modules/common/burgerModal'
+
 
 
 

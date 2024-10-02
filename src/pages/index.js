@@ -22,6 +22,7 @@ import '../modules/common/aos'
 
 
 //modals
+import '../modules/common/burgerModal'
 import '../modules/common/popupModal'
 
 
