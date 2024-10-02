@@ -3,7 +3,9 @@
     justify-content: center;
     align-items: center;
 
-    width: 100%;
+    // width: 100%;
+    // height: 100%;
+    width: 100vw;
     height: 100%;
     position: fixed;
     top: 0;
@@ -33,16 +35,24 @@
         font-size: 15px;
         line-height: 1.3;
     
-        max-width: 590px;
+        max-width: 350px;
+
+        @include tablet{
+            max-width: 590px;
+        }
     }
 
     &-title{
-        font-size: 22px;
-        line-height: 1.1;
+
         text-align: center;
     }
 
     &-sub-title{
+        font-size: 14px;
+
+        @include tablet{
+            font-size: 15px;
+        }
 
     }
 
@@ -53,14 +63,32 @@
         margin-bottom: 30px;
 
         & li{
+            display: flex;
             width: calc(50% - 10px);
+
+            &:last-child{
+                order: 2;
+            }
+            &:nth-child(2){
+                order: 3;
+                width: 100%;
+                max-width: 100%;
+            }
+
+            @include tablet{
+                width: calc(50% - 10px);
+            }
         }
     }
 
     &-btn{
         width: 100%;
-        max-width: 255px;
+        max-width: 100%;
         cursor: pointer;
+
+        @include tablet{
+            max-width: 255px;
+        }
     }
 
     &-accent-btn{
@@ -69,6 +97,11 @@
         cursor: pointer;
         background-color: $white;
         color: $accent;
+
+        font-size: 12px;
+        @include tablet{
+            font-size: 16px;
+        }
 
     }
 
