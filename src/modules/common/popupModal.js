@@ -3,14 +3,15 @@ import { setCookie, getCookie, deleteCookie } from "./cookie";
 
 const {popupModal,cookieAccept,cookieSettings,cookieReject} = refsCommon
 
-
 const onClickAccept = () =>{
 
     // cookie accept logic
     setCookie("cookie_avenga", "accepted", 1); // зберігаємо кукі 1 день
 
     popupModal.classList.remove('modal-active');
-    document.body.style.overflow = 'auto';
+    document.body.style.overflowY = 'auto';
+    document.body.parentElement.style.overflowY = 'auto';
+
 }
 
 const onClickReject = () =>{
@@ -19,7 +20,8 @@ const onClickReject = () =>{
     deleteCookie("cookie_avenga");
 
     popupModal.classList.remove('modal-active');
-    document.body.style.overflow = 'auto';
+    document.body.style.overflowY = 'auto';
+    document.body.parentElement.style.overflowY = 'auto';
 }
 
 const onClickSettings = () =>{
@@ -33,6 +35,7 @@ window.onload = function() {
         popupModal.style.display = 'flex';
        
         document.body.style.overflow = 'hidden';
+        document.body.parentElement.style.overflow = 'hidden';
         setTimeout(()=>popupModal.classList.add('modal-active'),4)
         
     }
