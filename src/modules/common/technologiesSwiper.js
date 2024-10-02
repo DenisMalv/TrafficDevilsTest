@@ -1,5 +1,7 @@
 import Swiper from 'swiper/bundle';
 
+document.addEventListener('DOMContentLoaded', async () => {
+  
 const options = {
   slidesPerView: 1,
   spaceBetween: 20,
@@ -21,3 +23,4 @@ const options = {
 
 const blogSwiper = new Swiper(".technologiesSwiper", options);
 
+})

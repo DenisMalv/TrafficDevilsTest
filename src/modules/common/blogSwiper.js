@@ -1,6 +1,7 @@
 import Swiper from 'swiper/bundle';
 
-
+document.addEventListener('DOMContentLoaded', async () => {
+  
 const blogSwiper = new Swiper(".blogSwiper", {
     preloadSlides: 1,
     lazy:true,
@@ -35,3 +36,4 @@ const blogSwiper = new Swiper(".blogSwiper", {
     
   });
 
+})

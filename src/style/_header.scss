@@ -81,7 +81,7 @@
     opacity: 0;
     pointer-events: none;
 
-    background-color: #5646CC1A;
+    background-color: #CCC8EA;
     border-radius: 12px;
     min-width: 130px;
     width: 100%;
@@ -99,7 +99,8 @@
             color: $white;
         }
         &:active{
-            background-color: #5646CC1A;
+            // background-color: #5646CC1A;
+            background-color: #CCC8EA;
         }
     }
 
@@ -126,6 +127,8 @@
 
     cursor: pointer;
 
+    z-index: 12;
+
     &:hover,&:focus{
         color: $accent;
     }
@@ -146,6 +149,8 @@
         transition: $transition-btn;
 
     }
+
+
 
     @include desktop{
         display: none;

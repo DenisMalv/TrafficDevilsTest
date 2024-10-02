@@ -1,14 +1,15 @@
 import refsCommon from "./refsCommon";
 import { setCookie, getCookie, deleteCookie } from "./cookie";
 
-const {popupModal,cookieAccept,cookieSettings,cookieReject} = refsCommon
+const {popupModal,cookieAccept,cookieSettings,cookieReject, MODAL_ACTIVE} = refsCommon
+
 
 const onClickAccept = () =>{
 
     // cookie accept logic
     setCookie("cookie_avenga", "accepted", 1); // зберігаємо кукі 1 день
 
-    popupModal.classList.remove('modal-active');
+    popupModal.classList.remove(MODAL_ACTIVE);
     document.body.style.overflowY = 'auto';
     document.body.parentElement.style.overflowY = 'auto';
 
@@ -19,7 +20,7 @@ const onClickReject = () =>{
     // cookie reject logic
     deleteCookie("cookie_avenga");
 
-    popupModal.classList.remove('modal-active');
+    popupModal.classList.remove(MODAL_ACTIVE);
     document.body.style.overflowY = 'auto';
     document.body.parentElement.style.overflowY = 'auto';
 }
@@ -36,7 +37,7 @@ window.onload = function() {
        
         document.body.style.overflow = 'hidden';
         document.body.parentElement.style.overflow = 'hidden';
-        setTimeout(()=>popupModal.classList.add('modal-active'),4)
+        setTimeout(()=>popupModal.classList.add(MODAL_ACTIVE),4)
         
     }
 };

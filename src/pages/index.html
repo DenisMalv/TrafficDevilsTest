@@ -14,7 +14,7 @@
 
   <title>Avenga - Technology consulting services</title>
 </head>
-<body style="overflow: auto;">
+<body >
   <header class="header" id="header">
     <div class="container">
       <nav role="navigation" aria-label="main navigation" class="flex jb navigation">
@@ -72,11 +72,11 @@
           </div>
         </div>
         <div class="header-burder-container">
-          <button type="button" role="button" class="burger-button" id="burger-btn" >
-            <svg class="burger-button-icon" width="32" height="32" alt="Іконка відкриття мобільного меню навігації" >
+          <button type="button" role="button" class="burger-button" aria-label="Open burger menu button" id="burger-btn" >
+            <svg class="burger-button-icon js-burger-open" width="32" height="32" alt="Іконка відкриття мобільного меню навігації" >
                 <use href="../img/icons/icon-sprite.svg#menu-burger"></use>
             </svg>
-            <svg class="burger-button-icon btn-hide" width="32" height="32" alt="Іконка закриття мобільного меню навігації" >
+            <svg class="burger-button-icon js-burger-close btn-hide" width="32" height="32" alt="Іконка закриття мобільного меню навігації" >
                 <use href="../img/icons/icon-sprite.svg#close"></use>
             </svg>
           </button>
@@ -911,9 +911,57 @@
   </footer>
 
   <div class="burger-modal-bgd burger" id="burger-modal">
+    <div class="burger-wrapper">
+      <div class=" burger-nav-container">
+        <div class="change-lang-container burger" tabindex="0" id="burger-lang-dropdown">
+          <div class="change-lang" id="burger-lang">
+            <span class="change-lang-text" id="burger-change-lang-text">Global (EN)</span>
+            <svg class="svg" width="12" height="12" alt="icon dropdown">
+              <use href="../img/icons/icon-sprite.svg#dropdown"></use>
+            </svg>
+          </div>
+          <ul class="lang-dropdown" id="burger-lang-dropdown">
+            <li tabindex="-1" data-value="Global (EN)">Global (EN)</li>
+            <li tabindex="-1" data-value="Français (FR)">Français (FR)</li>
+            <li tabindex="-1" data-value="Español (ES)">Español (ES)</li>
+            <li tabindex="-1" data-value="Deutsch (DE)">Deutsch (DE)</li>
+          </ul>
+        </div>
+        <ul class="burger-nav list flex jb " id="burger-nav-list">
+          <li class="list__item">
+            <a class="" href="#" aria-label="Link to home">Home</a>
+          </li>
+          <li class="list__item">
+            <a href="#" aria-label="Link to Industries section">Industries</a>
+          </li>
+          <li class="list__item">
+            <a href="#" aria-label="Link to Services section">Services</a>
+          </li>
+          <li class="list__item">
+            <a href="#" aria-label="Link to Technologies section">Technologies</a>
+          </li>
+          <li class="list__item">
+            <a href="#" aria-label="Link to Success section">Success</a>
+          </li>
+          <li class="list__item">
+            <a href="#" aria-label="Link to About section">About</a>
+          </li>
+          <li class="list__item">
+            <a href="#" aria-label="Link to Insights section">Insights</a>
+          </li>
+          <li class="list__item">
+            <a href="#" aria-label="Link to Career section">Career</a>
+          </li>
+          <li class="list__item">
+            <a href="#" aria-label="Link to Contact us section">Contact us</a>
+          </li>
+        </ul>
+        
+      </div>
+    </div>
   </div>
 
-  <div class="modal-bgd pop-up modal-active" id="popup-modal">
+  <div class="modal-bgd pop-up" id="popup-modal">
     <div class="pop-up-wrapper">
       <h3 class="pop-up-title mb-15">Welcome to Avenga!</h3>
       <p class="pop-up-sub-title mb-20">This site employs cookies and similar technologies to collect device and personal data. This data processing serves various purposes, including integrating content, external services, third-party elements, statistical analysis, and social media features. Depending on the functionality, some data may be shared with third parties. Your consent is optional and not necessary for using our website; you may choose to decline or withdraw it at any time. By consenting, you agree to the use of cookies across all Avenga International GmbH websites.</p>
