@@ -2,13 +2,37 @@ import Swiper from 'swiper/bundle';
 
 
 const reviewSwiper = new Swiper(".reviewsSwiper", {
-    slidesPerView: 2,
-    slidesPerGroup: 2,
-    autoHeight: true,
+    slidesPerView: 1,
+    slidesPerGroup: 1,
     spaceBetween: 20,
     preloadSlides: 2,
     lazy:true,
     lazyPreloadPrevNext:2,
+    autoHeight:true,
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        // grid: {
+        //   rows: 2,
+        // },
+      },
+      // when window width is >= 768px
+      768: {
+        slidesPerView: 2,
+        slidesPerGroup:2,
+        spaceBetween: 20,
+        autoHeight:true,
+        // grid: {
+        //   rows: 1,
+        // },
+      },
+      // when window width is >= 1024px
+      1024: {
+        slidesPerView: 2,
+        slidesPerGroup:2,
+      },
+    },
     pagination: {
       el: ".swiper-pagination",
       type: "fraction",

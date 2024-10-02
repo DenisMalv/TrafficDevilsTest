@@ -2,11 +2,25 @@ import Swiper from 'swiper/bundle';
 
 
 const blogSwiper = new Swiper(".blogSwiper", {
-    slidesPerView: 3,
-    spaceBetween: 20,
     preloadSlides: 1,
     lazy:true,
     lazyPreloadPrevNext:1,
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 20
+      },
+      // when window width is >= 768px
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 20
+      },
+      // when window width is >= 1024px
+      1024: {
+        slidesPerView: 3,
+        spaceBetween: 20
+      },
+    },
     pagination: {
       el: ".swiper-pagination",
       type: "fraction",

@@ -1,5 +1,8 @@
-import Accordion from 'accordion-js';
 import 'accordion-js/dist/accordion.min.css';
+
+
+document.addEventListener('DOMContentLoaded', async () => {
+  const { default: Accordion } = await import('accordion-js');
 
 const accordions = Array.from(document.querySelectorAll('.accordion-container'));
 new Accordion(accordions, {
@@ -10,3 +13,6 @@ new Accordion(accordions, {
       console.log(currentElement);
     }}
 );
+
+
+})

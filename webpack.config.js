@@ -46,6 +46,7 @@ module.exports = {
       template: path.resolve(__dirname, 'src', 'pages', 'privacy.html'),
       output:'privacy.html',
       filename:'privacy.html',
+      chunks: ['privacy'],
     }),
 
     new CopyWebpackPlugin({
@@ -147,5 +148,6 @@ module.exports = {
       new TerserPlugin(), // Мініфікація JavaScript
       new CssMinimizerPlugin(), // Мініфікація CSS
     ],
+    
   },
 };

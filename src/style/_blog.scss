@@ -3,7 +3,7 @@
     .blog-text-container{
         display: flex;
         flex-direction: column;
-        height: 223px;
+        height: 100%;
     }
 
     .blogSwiper {
@@ -18,7 +18,12 @@
     .swiper-slide {
         width: 387px;
         min-height: 100%;
+
+        display: flex;
+        flex-direction: column;
+
         cursor: grab;
+
 
         img {
         display: block;
@@ -26,62 +31,98 @@
         font-size: 0;
         margin-bottom: 20px;
         }
-        h4{
-            font-size: 22px;
-            line-height: 1.1;
+        h3{
             margin-bottom: 15px;
         }
 
         p{
             font-size: 15px;
             margin-bottom: auto;
+
         }
     }
 
     .pagination-wrapper{
-        margin-top: 30px;
         position: relative;
-        width: 82px;
-        height: 20px;
-        margin-left: auto;
-        margin-right: auto;
+        width: 160px;
+        height: 36px;
+        left: 0;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 20px auto 0;
+
+        @include low-desktop{
+            width: 82px;
+            height: 20px;
+            margin: 30px auto 0;
+        }
     }
 
     .swiper-pagination{
         position: static;
         font-size: 15px;
         line-height: 1.3;
+        max-width: 40px;
     }
 
     .swiper-button-next{
         right: 0;
-        top: 100%;
-        width: 20px;
-        height: 20px;
+        top: 50%;
+        width: 40px;
+        height: 40px;
+
+        @include low-desktop{
+            width: 20px;
+            height: 20px;
+            top: 100%;
+        }
         &::after{
             content: '';
             position: absolute;
-            width: 20px;
-            height: 20px;
+            width: 40px;
+            height: 40px;
             background-image: url('../img/icons/arrow-right.svg');
+            background-size: 36px 36px;
             background-position: center;
             background-repeat: no-repeat;
+
+            @include low-desktop{
+                width: 20px;
+                height: 20px;
+                background-size: 20px 20px;
+            }
         }
     }
 
     .swiper-button-prev{
         left: 0;
-        top: 100%;
-        width: 20px;
-        height: 20px;
+        top: 50%;
+        width: 40px;
+        height: 40px;
+
+        @include low-desktop{
+            width: 20px;
+            height: 20px;
+            top: 100%;
+        }
+
         &::after{
             content: '';
             position: absolute;
-            width: 20px;
-            height: 20px;
+            width: 40px;
+            height: 40px;
             background-image: url('../img/icons/arrow-left.svg');
+            background-size: 36px 36px;
             background-position: center;
             background-repeat: no-repeat;
+
+            @include low-desktop{
+                width: 20px;
+                height: 20px;
+                background-size: 20px 20px;
+            }
         }
     }
 
